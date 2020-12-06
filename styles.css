@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    
+    display: flex;
+    flex-wrap: wrap;
+    width: 15rem;
+}
+.container__room {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: green;
+    width: 5rem;
+    height: 5rem;
+    font-size: 2em;
+    color: white;
+
+}
+i.cross {
+    display: none;
+    transform: scale(1.3);
+}
+i.circle {
+    display: none;
+}
+.container__room.display-x > i.cross {
+    display: inline;
+}
+.container__room.display-o > i.circle {
+    display: inline;
+}
+.start-btn {
+    width: 5em;
+}
+.reload-btn {
+    width: 5em;
+}
